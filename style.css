@@ -1,0 +1,154 @@
+html 
+{height: 100%;
+min-height: 100%;}
+
+/*nav bar*/
+#navbar{
+display: grid;
+grid-template-columns: 1fr 50px 50px 50px 50px;
+grid-template-rows: 50px;
+grid-template-areas: 
+". gmail images menu sign-in";
+}
+
+#navbar a{
+    text-decoration: none;
+    color:#222;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#gmail{
+grid-area: gmail;
+justify-self: center;
+align-self: center;
+}
+#images{
+grid-area: images;
+justify-self: center;
+align-self: center;
+}
+#menu{
+grid-area: menu;
+justify-self: center;
+align-self: center;
+}
+#sign-in{
+grid-area: sign-in;
+justify-self: center;
+align-self: center;
+}
+
+/*main*/
+#main a{
+    text-decoration: none;
+    color:rgb(29, 17, 206);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+#main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100px 70px 70px 70px 70px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". googletext ."
+    ". googletext2 .";
+}
+#logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: top;
+}
+#search{
+    grid-area: search;
+    height: 35px;
+    align-self: center;
+}
+#flexbox{
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#google-search-btn{
+    grid-area: google-serch-btn;
+}
+#random-search-btn{
+    grid-area: random-search-btn;
+}
+#googletext{
+    grid-area: googletext;
+    color: blue;
+    justify-self: center;
+    align-self: top;
+}
+#googletext2{
+    grid-area: googletext2;
+    justify-self: center;
+    align-self: top;
+}
+
+/*footer*/
+#footer a{
+    text-decoration: none;
+    color:rgb(133, 133, 133);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+#footer{
+    display: grid;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+    grid-template-columns: 100px 100px 100px 200px 1fr 100px 100px 100px ;
+    grid-template-rows: 50px;
+    grid-template-areas: "about advertising business howsearchworks carbonneutral privacy terms settings";
+    background-color: rgb(223, 228, 236);
+}
+#nigeria{
+
+}
+#about{
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+#advertising{
+  grid-area: advertising;
+  justify-self: center;
+  align-self: center;  
+}
+#business{
+grid-area:business;
+justify-self: center;
+align-self: center;
+}
+#howsearchworks{
+grid-area: howsearchworks;
+justify-self: center;
+align-self: center;
+}
+#carbonneutral{
+grid-area:carbonneutral;
+justify-self: center;
+align-self: center;
+}
+#privacy{
+grid-area:privacy;
+justify-self: center;
+align-self: center;
+}
+#terms{
+grid-area: terms;
+justify-self: center;
+align-self: center;
+}
+#settings{
+grid-area: settings;
+justify-self: center;
+align-self: center;
+}
